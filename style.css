@@ -1,0 +1,1463 @@
+@font-face {
+    font-family: archi;
+    src: url(./archia-light-webfont.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.cursur{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    
+    z-index: 99999;
+    mix-blend-mode: difference;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(183, 3, 3); */
+    position: relative;
+}
+
+.page1 h1{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 60%;
+    left: 10%;
+    font-family: archi;
+    font-size: 3vw;
+    width: 37%;
+}
+
+.page1 h1::after{
+    content: "";
+    position: absolute;
+    height: 4vw;
+    width: 2.5vw;
+    animation: kuch 0.3s infinite linear;
+    background-color: #fff;
+}
+
+.page1 h1 span{
+    display: none;
+    font-family: archi;
+}
+
+@keyframes kuch {
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+.page1-vedio{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+i{
+    display: none;
+    color: rgb(180, 180, 180);
+    font-size: 2.5vw;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7rem;
+    height: 15vh;
+    /* background-color: aqua; */
+    position: fixed;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: rgb(143, 156, 165) 100%;
+    /* position: absolute; */
+}
+
+.nav-part2 h4{
+    
+    color: rgb(143, 156, 165);
+}
+
+/*                                        page2 from here                         */
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(231, 231, 231, 0.475);
+    position: relative;
+    padding: 8vw 5vw;
+}
+
+.page2 h2{
+    font-size: 2vw;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: archi;
+
+}
+
+.page2-content{
+    /* height: 60vh;
+    width: 80%; */
+    /* background-color: rgb(255, 0, 0); */
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: archi;
+}
+
+.left-page2{
+    height: 20vw;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-page2 img{
+    height: 70%;
+    /* position: fixed; */
+}
+
+.left-page2:hover{
+    transform: scale(1.1);
+}
+
+.blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(50px);
+    position: relative;
+    z-index: 9;
+}
+
+.left-page2 img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.right-page2{
+    height: 25vw;
+    width: 45%;
+    /* background-color: burlywood; */
+}
+
+.right-page2 h1{
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.right-page2 p{
+    font-size: 1.3vw;
+    margin: 2vw 0;
+    font-weight: 400;
+}
+
+.right-page2 button{
+    font-size: 1.2vw;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: transparent;
+}
+
+
+/*                                             page 3 here                              */
+
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 231, 231, 0.475);
+}
+
+
+.page3-content{
+    height: 80vh;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+
+
+.page3-left{
+    height: 100%;
+    width: 48%;
+    margin-top: 10vh;
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page3-left p{
+    font-size: 3.2vh;
+    font-weight: 100;
+    padding: 5vh 0;
+    font-family: archi;
+}
+
+.page3-left button{
+    font-size: 1.2vw;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: transparent;
+}
+
+/* .page3-content video{
+    height: 25vw;
+    width: 45%;
+    object-fit: contain;
+    border-radius: 50px;
+} */
+
+.page3-right{
+    margin-top: 12vh;
+    margin-right: 5vh;
+    height: 60%;
+    width: 40%;
+    /* background-color: rgb(67, 13, 117); */
+    border-radius: 20px;
+}
+
+.page3-right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.page3-right video:hover{
+    transform: scale(1.1);
+}
+
+/* .introduction{
+    text-align: center;
+    margin-bottom: -3%;
+    mix-blend-mode: difference;
+} */
+/*  -------------------------------------------------------------- page 4 */
+
+.page4{
+    /* background-color: rgb(170, 112, 35); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://github.com/saarthack/brain-space/blob/main/bg.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+    /* position: relative; */
+    padding-bottom: 30vw;
+    flex-direction: column;
+}
+
+.intro{
+    position: relative;
+    /* width: 100%; */
+}
+
+.page4 h1{
+    position: absolute;
+    font-family: archi;
+    text-align: center;
+    width: 100%;
+    font-size: 2vw;
+    margin-top: 5vh;
+}
+
+.page4 img{
+    margin-bottom: 5%;
+    /* background-color: #000; */
+    /* width: 40%; */
+    z-index: 9;
+}
+
+
+ 
+#helmet{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5%;
+} 
+
+.page4-content-1{
+    height: 50 vh;
+    /* width: 100%; */
+    text-align: center;
+    /* background-color: aqua; */
+    /* padding-top: 10%; */
+    font-family: archi;
+    
+} 
+
+.page4-content-1 h2{
+    font-size: 3vw;
+}
+
+.page4-content-1 p{
+    font-size: 1.5vw;
+    margin: 5vh;
+}
+
+.page4-content-1 button{
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+
+.page4-content-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vw;
+    height: 50vh;
+    width: 90%;
+    /* background-color: azure; */
+}
+
+.page4-content-2 h2{
+    height: 100%;
+    width: 40%;
+    font-family: archi;
+    font-size: 1.8vw;
+    margin-top: 10vw;
+    margin-left: 2vw;
+}
+
+.page4-content-2 video{
+    height: 80%;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-right: 2vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.page4-content-2 video:hover{
+    transform: scale(1.05);
+}
+
+.page4-content-3{
+    height: 60vh;
+    width: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page4-content-3 video{
+    height: 70%;
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+.page4-content-3 video:hover{
+    transform: scale(1.05);
+}
+
+.page4-content-3 .page4-content-3-inner{
+    height: 70%;
+    width: 45%;
+    margin-left: 5%;
+    /* background-color: antiquewhite; */
+    font-family: archi;
+    font-size: 1.1vw;
+}
+
+.page4-content-3-inner button{
+    padding: 0.8vw 1.5vw;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    margin-top: 8%;
+    background-color: transparent;
+}
+
+
+.page4-content-4{
+    margin-top: 5%;
+    height: 60vh;
+    width: 90%;
+    /* background-color: rgba(0, 20, 46, 0.537); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page4-content-4 h2{
+    height: 70%;
+    width: 45%;
+    margin-left: 5%;
+    /* background-color: antiquewhite; */
+    font-family: archi;
+    font-size: 1.9vw;
+}
+
+
+.page4-content-4 video{
+    height: 70%;
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    margin-right: 2%;
+}
+.page4-content-4 video:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.page4-content-5{
+    margin-top: 5%;
+    height: 60vh;
+    width: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page4-content-5 video{
+    height: 70%;
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+.page4-content-5 video:hover{
+    transform: scale(1.05);
+}
+
+.page4-content-5 .page4-content-5-inner{
+    height: 70%;
+    width: 45%;
+    margin-left: 5%;
+    /* background-color: antiquewhite; */
+    font-family: archi;
+    font-size: 1.1vw;
+}
+
+.page4-content-5-inner button{
+    padding: 0.8vw 1.5vw;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    margin-top: 5%;
+    background-color: transparent;
+}
+
+
+/* --------------------------------------------------------page5  */
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(118, 98, 72);
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    
+}
+
+.page5-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-left: 8vw;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* position: fixed; */
+}
+
+.page5 .info{
+    flex-shrink: 0;
+    height: 65vh;
+    width: 30%;
+    /* background-color: aliceblue; */
+    margin-right: 7vw;
+    color: white;
+}
+
+.info h2{
+    font-size: 3vw;
+    font-family: archi;
+}
+.info p{
+    font-size: 1.2vw;
+    font-family: archi;
+    margin: 0.5vw 0;
+}
+.info button{
+    flex-shrink: 0;
+    margin-top: 3vw;
+    font-size: 1vw;
+    padding: 1vw 2.5vw;
+    border-radius: 50px;
+    /* font-family: archi; */
+    background-color: transparent;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+}
+
+.page5 .element{
+    flex-shrink: 0;
+    height: 75vh;
+    width: 30%;
+    background-color: rgba(242, 243, 244, 0.178);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    /* backdrop-filter: blur(20px); */
+}
+
+.element img{
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 1vw;
+}
+
+.element h1{
+    font-size: 2.9vw;
+    text-align: center;
+    font-family: archi;
+}
+
+.element p{
+    margin: 2vw 0;
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: archi;
+}
+
+.page5-content .slider{
+    margin-top: 43vw;
+    height: 5px;
+    width: 70%;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    /* top: 95%; */
+    /* transform: translate(-50%, 0); */
+    overflow: hidden;
+}
+
+.slider-in{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/* ----------------------------------------------------page6 from here */
+
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    background: conic-gradient(from 197deg at 27% 70%, #f9f1ff 26.2499991059deg, #d0b7ff30 101.25deg, #fae0cab2 243.7499928474deg, #fab4af 326.25deg);
+}
+
+.page6 .heading1{
+    height: 30vh;
+    /* background-color: antiquewhite; */
+    padding: 6vw 8vw;
+    font-family: archi;
+    font-size: 3.3vw;
+    font-weight: 400;
+}
+
+
+.content-page6{
+    height: 60vh;
+    width: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+}
+
+.content-page6 .left{
+    height: 70%;
+    width: 60%;
+    /* background-color: cornsilk; */
+}
+
+.content-page6 p{
+    /* background-color: brown; */
+    padding-top: 2vw;
+    font-size: 1.7vw;
+    padding-left: 8vw;
+    font-family: archi;
+}
+
+
+.content-page6 .right{
+    height: 70%;
+    width: 60%;
+    /* background-color: rgb(145, 120, 21); */
+}
+
+.content-page6 .right h4{
+    font-size: 1.5vw;
+    font-family: archi;
+    padding: 2vw 4.2vw;
+    font-weight: 100;
+}
+
+
+.content-page6 .right ol{
+    font-size: 1.5vw;
+    font-family: archi;
+    padding: 2vw 6vw;
+    font-weight: 700;
+    /* font-weight: 100; */
+}
+
+ol li{
+    padding: 0.5vw;
+}
+
+.page6 .line{
+    height: 0.1px;
+    width: 85%;
+    background-color: #000;
+    margin-left: 8vw;
+}
+
+
+
+
+
+.content2-page6{
+    height: 100vh;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.content2-page6 .heading2{
+    font-size: 1.5vw;
+    font-weight: 700;
+    font-family: archi;
+    height: 15%;
+    width: 100%;
+    padding-top: 5vw;
+    padding-left: 7vw;
+    /* background-color: #d0b7ff; */
+}
+
+.boxes{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: ; */
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+
+.content2-page6 .card1{
+    margin-top: 2vw;
+    height: 75vh;
+    width: 32%;
+    /* margin-left: 2vw; */
+    /* margin: 3vw 2.5vw; */
+    /* background-color: blue; */
+    /* border-radius: 40px; */
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+
+}
+
+.card1 h1{
+    height: 15%;
+    width: 60%;
+    background-color: #d0b7ff95;
+    text-align: center;
+    margin: 3vw;
+    padding-top: 1vw;
+    font-family: archi;
+    border-radius: 50px;
+}
+
+.card1 p{
+    font-size: 1.2vw;
+    padding: 0 2vw;
+    font-family: archi;
+}
+
+.content2-page6 .card2{
+    margin-top: 2vw;
+    height: 75vh;
+    width: 32%;
+    margin-left: 7vw;
+    /* background-color: blue; */
+    /* border-radius: 40px; */
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+
+}
+
+.card2 h1{
+    height: 25%;
+    width: 70%;
+    background-color: rgba(0, 255, 255, 0.416);
+    /* text-align: center; */
+    margin: 3vw 2.5vw;
+    padding-top: 1vw;
+    font-family: archi;
+    border-radius: 50px;
+    padding-left: 1.2vw;
+}
+
+.card2 p{
+    font-size: 1.3vw;
+    padding: 0 2vw;
+    font-family: archi;
+}
+
+.content2-page6 .card3{
+    margin-top: 2vw;
+    height: 75vh;
+    width: 32%;
+    margin-left: 7vw;
+    /* background-color: blue; */
+    /* border-radius: 40px; */
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+
+}
+
+.card3 h1{
+    height: 40%;
+    width: 70%;
+    background-color: #fab4afd4;
+    /* text-align: center; */
+    margin: 0 1vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    padding-top: 0.8vw;
+    font-family: archi;
+    border-radius: 50px;
+    padding-left: 1.2vw;
+}
+
+.card3 p{
+    font-size: 1.2vw;
+    padding: 0 2vw;
+    font-family: archi;
+}
+
+/* .page6 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30vw;
+} */
+
+.page6-bottom{
+    height: 40vh;
+    width: 100%;
+    /* background-color: #4e19b2; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.page6 h2{
+    height: 22vh;
+    width: 100%;
+    /* background-color: rgb(83, 2, 2); */
+    text-align: center;
+    font-family: archi;
+    padding-top: 5vw;
+}
+
+.page6 button{
+    flex-shrink: 0;
+    margin-top: 1vw;
+    font-size: 1vw;
+    padding: 1vw 2.5vw;
+    border-radius: 50px;
+    /* font-family: archi; */
+    background-color: transparent;
+    font-weight: 700;
+    margin-left: 5vw;
+}
+
+.page6 .img{
+    padding-top: 1vw;
+    padding-left: 25vw;
+    /* margin-top: 5vw; */
+    /* background-color: #411717; */
+    height: 5vw;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/substracts/hp_bdass_substract.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------------page  7  */
+
+
+
+.page7{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #d0b7ff; */
+    padding: 1px;
+}
+
+.page7 h1{
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: archi;
+    font-weight: 100;
+    padding: 5vw;
+    /* background-color: #72150e; */
+}
+
+.page7 .page7-content{
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.page7-content .upper{
+    height: 40vh;
+    width: 100%;
+    /* background-color: #4e19b2; */
+    display: flex;
+}
+
+
+.upper h2{
+    margin-top: 2vw;
+    font-size: 2.5vw;
+    font-family: archi;
+    width: 80%;
+    padding-left: 5vw;
+    /* background-color: #000032; */
+}
+
+.upper p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    font-family: archi;
+    width: 80%;
+    padding-left: 5vw;
+}
+
+.upper img{
+    width: 70%;
+    height: 70%;
+    padding-right: 5vw;
+    margin-top: 2vw;
+}
+
+
+.lower{
+    height: 90vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.lower .line1{
+    height: 30vh;
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20vw;
+}
+
+.line1 .line-1,.line-2,.line-3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    /* background-color: brown; */
+    width: 28%;
+    text-align: center;
+}
+
+.line1 h5{
+    padding: 0.5vw;
+}
+
+.line1 .line-3{
+    width: 25%;
+}
+
+
+.lower .line2{
+    height: 30vh;
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8vw;
+    padding-right: 5vw;
+    
+}
+
+.line2 .line-2,.line-3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    /* background-color: brown; */
+    width: 15%;
+    text-align: center;
+}
+
+.line2 .line-1{
+    /* width: 35vw; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    /* background-color: brown; */
+    width: 20%;
+    text-align: center;
+}
+
+.lower button{
+    margin: 5vw;
+    padding: 0.9vw 2vw;
+    font-size: 1.3vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+
+/* page 8 from here  */
+
+
+#page8{
+    width: 94%;
+    margin: auto;
+    min-height: 100vh;
+    border-top-left-radius: 100px;
+    padding-bottom: 50vh;
+    /* position: relative; */
+    background:conic-gradient(at 0 0 , #FFC3BE 0deg, #CED2FB 39.19deg, #C5E3FF 95.62deg, #BEEFF8 150.61deg, #B7F9F0 208.13deg, #F7FFC7 253.13deg, #FFE7D2 300deg, #FFD6CE 328.25deg, #FFC3BE 360deg), conic-gradient(from 176.66deg at 46.1% 33.87%, #E7E2F0 0deg, #95BFE8 39.19deg, #A3DEFF 104.7deg, #77A8F4 150.61deg, #6C89F0 210.89deg, #DAD4D4 272.3deg, #FFBBB4 314.64deg, #EFD4DB 328.25deg, #E7E2F0 360deg);
+    margin-top: 4vmax;
+}
+
+.page8_header_bg{
+    width: 16vw;
+    height: 16vw;
+    /* background-color: red; */
+    background-image: url(	https://www.brain.space/wp-content/themes/brain.space/assets/substracts/shape_corner_substract.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page8_circle{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/imgs/side-shape-icons/hp_intro_side_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page8_header h3{
+    margin-top: -20vh;
+    /* background: red; */
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.page8_top{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+    
+}
+
+.page8_top h2{
+    width: 35vw;
+    font-size: 3vw;
+    font-weight: 200;
+    /* background-color: yellow; */
+}
+
+.page8_top_right{
+    width: 40vw;
+}
+
+.page8_top_right h3{
+    margin-top: 0;
+    text-align: start;
+    letter-spacing: 0px;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.page8_top_right p{
+    margin-top: 5vh;
+    font-size: 1.3vw;
+}
+
+.page8_center{
+    width:85vw;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    padding: 1px 0 10vh 0;
+    border-radius: 50px;
+}
+
+.page8_center p{
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.icons_contain{
+    width: 70vw;
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+    /* margin-top: 15vh; */
+    /* background-color: red; */
+}
+
+.icons_in{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding-left:5vw;
+    position: relative;
+}
+
+.icons_in::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.24);
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.last::after{
+    content:"";
+    height: 0;
+}
+
+.circle {
+    width: 8vh;
+    height: 8vh;
+    /* height: 0; */
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+    position: relative;
+   border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icons_in h4{
+    margin-left: 3vw;
+    font-weight: 200;
+  }
+
+  .page8_bot{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+}
+
+.page8_bot_left{
+    width: 35vw;
+    height: 100%;
+    /* background-color: red; */
+}
+.page8_bot p{
+    margin: 5vh 0;
+}
+
+.page8_bot h4{
+    padding: 3vh 0;
+    border-top: .5px solid rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+.page8_bot_right{
+    width: 40vw;
+    height: 100%;
+    background-image: url('https://www.brain.space/wp-content/uploads/2023/07/peripheral-sensors.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.page8{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/* ------------------------------------------------------------page 9 from here */
+
+
+.page9{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.page9 h1{
+    text-align: center;
+    font-family: archi;
+    font-size: 1.4vw;
+    padding: 4vw;
+    /* background-color: #fab4af; */
+}
+
+.page9-content{
+    width: 100%;
+    height: 80vh;
+    /* background-color: chartreuse; */
+    display: flex;
+}
+
+.text-content{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.text-content h2{
+    padding-top: 5vw;
+    font-size: 3vw;
+    font-family: archi;
+    padding-left: 6vw;
+}
+
+.text-content p{
+    font-size: 1.5vw;
+    font-family: archi;
+    font-weight: 100;
+    padding-left: 6vw;
+    margin: 2vw 0;
+    padding-bottom: 3vw;
+}
+
+.text-content h3{
+    font-size: 1.5vw;
+    font-family: archi;
+    font-weight: 100;
+    margin-left: 6vw;
+    width: 90%;
+    
+
+}
+
+.page9-content video{
+    height: 35vh;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 300px;
+    margin-top: 5vw;
+    margin-left: 8vw;
+}
+
+
+
+
+
+
+.page10{
+    height: 100vh;width: 100%;
+    
+}
+
+
+.page10 h1{
+    text-align: center;
+    font-family: archi;
+    font-size: 1.4vw;
+    padding: 4vw;
+   
+}
+
+.page10 .line1-img{
+    height: 20vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    justify-content: center;
+}
+
+.page10 .line2-img{
+    height: 20vh;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    justify-content: center;
+}
+
+
+.page10 h4{
+    height: 15vh;
+    width: 40%;
+   
+    font-size: 1.3vw;
+    font-family: archi;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 2vw;
+}
+
+.page10 button{
+    margin-top: 2vw;
+    margin-left: 7vw;
+    padding: 1vw 2vw;
+    font-size: 1.1vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+
+
+
+.page11{
+    min-height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/contact_bg.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-bottom-right-radius: 150px;
+    color: white;
+}
+
+.page11 .left-page11{
+    width: 50%;
+    height: 100vh;
+    
+}
+
+.left-page11 h1{
+    padding-top: 12vw;
+    padding-left: 8vw;
+    font-family: archi;
+    font-size: 3.3vw;
+}
+
+.left-page11 p{
+    padding-top: 2vw;
+    padding-left: 8vw;
+    font-family: archi;
+    font-size: 1.3vw;
+}
+
+.page11 .right-page11{
+    min-height: 140vh;
+    width: 50%;
+    
+    padding-top: 12vw;
+    
+}
+
+.right-page11 input{
+    margin-top: 1vw;
+    margin-left: 13vw;
+    padding: 2.2vw 6vw;
+    border-radius: 17px;
+
+
+    
+    width: 40%;
+    height: 36px;
+    
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid rgb(137, 151, 155);
+    transition: border-color 150ms ease-in-out 0s;
+    outline: none;
+    color: rgb(33, 49, 60);
+    background-color: rgb(255, 255, 255);
+    padding-right: 12px;
+    text-align: justify;
+    font-size: 1.3vw;
+}
+
+.right-page11 button{
+    margin-top: 3vw;
+    margin-left: 13vw;
+    padding: 1vw 2vw;
+    font-size: 1.1vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.right-page11 h4{
+    margin-left: 13vw;
+    font-family: archi;
+    font-size: 0.8vw;
+    margin-top: 1vw;
+}
+
+
+
+
+footer{
+    height: 80vh;
+    width: 100%;
+    
+}
+
+footer .footer-line1{
+    display: flex;
+    padding: 7vw;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer-line1 h5{
+    margin-top: 0.5vw;
+    margin-left: 2vw;
+    font-size: 0.6vw;
+}
+
+
+.footer-line2 {
+    width: 100%;
+    height: 10vh;
+    
+    padding: 0 7vw;
+    margin-top: 6vw;
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social img{
+    height: 2.2vh;
+    padding-left: 1vw;
+}
